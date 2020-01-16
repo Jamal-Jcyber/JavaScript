@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>JAVASCRIPT</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--  <link rel="manifest" href="site.webmanifest">-->
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/flexboxgrid.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <h1>Notions Of The Class & The Consctructor in JAVASCRIPT.</h1>
+
+
+  <section>
+
+    <div class="container">
+      <div class="row center-xs center-sm center-md center-lg">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <div class="form">
+
+            <label for="fname">FirstName</label><br>
+            <input type="text" id="fname" placeholder="Enter Your FirstName"><br>
+            <span class='error-message' id='fname-error'></span>
+
+            <label for="lname">LastName</label><br>
+            <input type="text" id="lname" placeholder="Enter Your LastName"><br>
+            <span class='error-message' id='lname-error'></span>
+
+            <label for="birthday">BirthDay</label><br>
+            <input type="text" id="birthday" placeholder="Enter Your Birthday Date"><br>
+            <span class='error-message' id='birthday-error'></span>
+
+            <label for="location">Location</label><br>
+            <input type="text" id="location" placeholder="Enter Your Location Where You Born"><br>
+            <span class='error-message' id='location-error'></span>
+
+            <label for="phone">PhoneNumber</label><br>
+            <input type="text" id="phone" placeholder="Enter Your Phone Number"><br>
+            <span class='error-message' id='phone-error'></span>
+
+            <label for="address">Address</label><br>
+            <input type="text" id="address" placeholder="Enter Your Address"><br>
+            <span class='error-message' id='address-error'></span>
+
+            <button onclick="return addingNewRows();">ADD</button>
+            <button onclick="return clearFeilds();">Clear</button>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+          <table border="1" id="table">
+            <h1>Displaying The Elements That You Entered Before </h1>
+            <thead>
+
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Date Naissance</th>
+            <th>Lieu Naissance</th>
+            <th>phone Number</th>
+            <th>Address</th>
+            </thead>
+
+            <tbody>
+            <tr id="trows">
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
