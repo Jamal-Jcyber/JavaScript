@@ -1,176 +1,59 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
+  <title>Page Not Found</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
-
-
-
-
-  <script>
-    //function that display value
-    function dis(val)
-    {
-      document.getElementById("result").value+=val
-    }
-
-    //function that evaluates the digit and return result
-    function solve()
-    {
-      let x = document.getElementById("result").value
-      let y = eval(x)
-      document.getElementById("result").value = y
-    }
-
-    //function that clear the display
-    function clr()
-    {
-      document.getElementById("result").value = ""
-    }
-  </script>
-
-
-  <!-- for styling -->
-  <style>
-    .title{
-      margin-bottom: 10px;
-      text-align:center;
-      width: 210px;
-      color:blue;
-      border: solid black 2px;
-    }
-
-    input[type="button"]
-    {
-      background-color:#fafafa;
-      color: black;
-      border: solid black 2px;
-      width:100%
-    }
-
-    input[type="text"]
-    {
-      background-color:white;
-      border: solid black 2px;
-      width:100%
-    }
-  </style>
-
-
-
-
 </head>
 
 <body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
+  <h1>Simple Calculator</h1>
 
 
+  <input type="text" id="number1" placeholder="enter the first number">
+  <input type="text" id="number2" placeholder="enter the second number">
 
 
+  <button type="submit" onclick="return Addition()">Addition</button>
+  <button type="submit" onclick="return Multiplication()">Multiplication</button>
+  <button type="submit" onclick="return Sustraction()">Soustraction</button>
+  <button type="submit" onclick="return Division()">Division</button>
 
 
-
-
-
-
-
-
-
-
-
-
-  <div class = title >Calculator With JAVASCRIPT</div>
-  <table border="1">
-    <tr>
-      <td colspan="3"><input type="text" id="result"/></td>
-      <!-- clr() function will call clr to clear all value -->
-      <td><input type="button" value="c" onclick="clr()"/> </td>
-    </tr>
-    <tr>
-      <!-- create button and assign value to each button -->
-      <!-- dis("1") will call function dis to display value -->
-      <td><input type="button" value="1" onclick="dis('1')"/> </td>
-      <td><input type="button" value="2" onclick="dis('2')"/> </td>
-      <td><input type="button" value="3" onclick="dis('3')"/> </td>
-      <td><input type="button" value="/" onclick="dis('/')"/> </td>
-    </tr>
-    <tr>
-      <td><input type="button" value="4" onclick="dis('4')"/> </td>
-      <td><input type="button" value="5" onclick="dis('5')"/> </td>
-      <td><input type="button" value="6" onclick="dis('6')"/> </td>
-      <td><input type="button" value="-" onclick="dis('-')"/> </td>
-    </tr>
-    <tr>
-      <td><input type="button" value="7" onclick="dis('7')"/> </td>
-      <td><input type="button" value="8" onclick="dis('8')"/> </td>
-      <td><input type="button" value="9" onclick="dis('9')"/> </td>
-      <td><input type="button" value="+" onclick="dis('+')"/> </td>
-    </tr>
-    <tr>
-      <td><input type="button" value="." onclick="dis('.')"/> </td>
-      <td><input type="button" value="0" onclick="dis('0')"/> </td>
-      <!-- solve function call function solve to evaluate value -->
-      <td><input type="button" value="=" onclick="solve()"/> </td>
-      <td><input type="button" value="*" onclick="dis('*')"/> </td>
-    </tr>
-  </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+    function Addition() {
+      let nbr1 = parseInt(document.getElementById("number1").value) ;
+      let nbr2 = parseInt(document.getElementById("number2").value) ;
 
+      let sum = nbr1 + nbr2;
+      alert(sum);
+    }
+    function Multiplication(){
+      let nbr1 = parseInt(document.getElementById("number1").value) ;
+      let nbr2 = parseInt(document.getElementById("number2").value) ;
+
+      let multiple = nbr1 * nbr2;
+      alert(multiple);
+    }
+    function Sustraction() {
+      let nbr1 = parseInt(document.getElementById("number1").value) ;
+      let nbr2 = parseInt(document.getElementById("number2").value) ;
+
+      let sustract = nbr1 - nbr2;
+      alert(sustract);
+    }
+    function Division(){
+      let nbr1 = parseInt(document.getElementById("number1").value) ;
+      let nbr2 = parseInt(document.getElementById("number2").value) ;
+
+      let division = nbr1 / nbr2;
+      alert(division);
+    }
+
+  </script>
+
+
+</body>
 </html>
+<!-- IE needs 512+ bytes: https://blogs.msdn.microsoft.com/ieinternals/2010/08/18/friendly-http-error-pages/ -->
