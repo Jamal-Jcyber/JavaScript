@@ -1,0 +1,88 @@
+body {
+    background-image: url(../img/1.jpg);
+    background-size: 1920px 894px;
+    overflow-x: hidden;
+}
+
+
+.all {
+    position: relative;
+    top: 213px;
+    left: 620px;
+}
+
+#z {
+    padding: 15px 25px;
+    font-size: 16px;
+    width: 170px;
+    border-radius:12px;
+    color: #fff;
+    background-color: #3498db;
+    border:none;
+    cursor: pointer;
+    box-shadow: 0 9px #2980b9;
+}
+
+#z:hover {
+    transform: translateY(3px);
+    box-shadow: 0 6px #2980b9;
+}
+
+#z:actif {
+    transform: translateY(7px);
+    box-shadow: 0 2px #2980b9;
+}
+
+.calc {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.names {
+    position: relative;
+    bottom: 29px;
+    left: 15px;
+}
+
+.git {
+    width: 6%;
+}
+
+.logo {
+    position: relative;
+    bottom: 71px;
+}
+
+
+.formulaire {
+    position: relative;
+    right: 375px;
+    bottom: 72px;
+}
+section input{
+    width: 33%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+section label {
+    font-family: Montserrat;
+    color: white;
+}
+
+
+.res {
+    font-family: Montserrat;
+    position: absolute;
+    bottom: 575px;
+    left: 429px;
+    width: 538px;
+    color: white;
+}
+#table {
+    position: absolute;
+}
